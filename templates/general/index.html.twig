@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil - M2L{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm text-center" style="padding: 75px 25px 25px 25px;"><img src="{{ asset('/images/Logo_M2L.png') }}" alt="le logo" style="height:200px;"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm text-center" style="padding: 25px 25px 25px 25px;"><h1>DECOUVREZ LE PLAISIR DU SPORT</h1></div>
+    </div>
+    <div class="row">
+        <div class="col-sm text-center" style="padding:25px;"><h5>La maison des ligues est une association centrale dans le monde sportif, après 50 années d'existence, la M2L continue d'apporter des nouveautés dans le sport</h5></div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4" style="padding: 75px 25px 100px 25px;">
+        <div class="col">
+            <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title text-center">Traumatologie sportive</h5>
+            </div>
+            <p class="card-text text-center" style="height: 75px">Définitions - Inventaire des pathologies - Traitement - Prévention</p>
+            <div class="card-footer text-center"><a href="traumatologie" class="btn btn-primary">Découvrir</a></div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title text-center">Alimentation du sportif</h5>
+            </div>
+            <p class="card-text text-center" style="height: 75px">Notions de base - Régimes adaptés à la compétition : préparation, période d'effort, récupération</p>
+            <div class="card-footer text-center"><a href="{{path('alimentation')}}" class="btn btn-primary">Découvrir</a></div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title text-center">Conduites addictives</h5>
+            </div>  
+                <p class="card-text text-center" style="height: 75px">Quelles conduites à tenir auprès du pratiquant sportif ?</p>
+            
+            <div class="card-footer text-center"><a href="{{path('addiction')}}" class="btn btn-primary">Découvrir</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
